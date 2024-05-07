@@ -84,9 +84,13 @@ class _HomeState extends State<Home> {
                 child: TextButton(
                   onPressed: () => {},
                   child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('1'),
-                      Text('2'),
+                      Text('Login', style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),),
                     ],
                   ),
                 ),
