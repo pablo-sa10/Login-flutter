@@ -80,10 +80,16 @@ class _HomeState extends State<Home> {
                     ]),
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: Row(
-                children: [
-                  Text("oiiiiii")
-                ],
+              child: SizedBox.expand(
+                child: TextButton(
+                  onPressed: () => {},
+                  child: const Row(
+                    children: [
+                      Text('1'),
+                      Text('2'),
+                    ],
+                  ),
+                ),
               ),
             ),
             const SizedBox(
