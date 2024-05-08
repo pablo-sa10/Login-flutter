@@ -83,29 +83,70 @@ class _HomeState extends State<Home> {
               child: SizedBox.expand(
                 child: TextButton(
                   onPressed: () => {},
-                  child: const Row(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Login',
+                      const Text('Login',
                           style: TextStyle(
                               fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white)),
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                          textAlign: TextAlign.left),
+                      SizedBox(
+                        height: 28,
+                        width: 28,
+                        child: Image.asset("assets/bone.png"),
+                      ),
                     ],
                   ),
                 ),
               ),
             ),
             const SizedBox(
-              height: 25,
+              height: 10,
             ),
             Container(
               height: 60,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                color: Colors.blueAccent,
+                color: const Color(0xFF3C5A99),
                 borderRadius: BorderRadius.circular(5),
               ),
+              child: SizedBox.expand(
+                child: TextButton(
+                  onPressed: () => {},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text('Login com o Facebook',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                          textAlign: TextAlign.left),
+                      SizedBox(
+                        height: 28,
+                        width: 28,
+                        child: Image.asset("assets/fb-icon.png"),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            SizedBox(
+              height: 40,
+              child: TextButton(
+                onPressed: () => {},
+                child: const Text(
+                  "Cadastre-se",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
           ],
         ),
       ),
