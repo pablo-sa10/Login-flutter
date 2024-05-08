@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/pages/reset_password.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -54,7 +55,12 @@ class _HomeState extends State<Home> {
               height: 40,
               alignment: Alignment.centerRight,
               child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                      builder: (context) => const ResetPasswordPage(),)
+                    );
+                  },
                   child: const Text(
                     "Recuperar Senha",
                     style: TextStyle(fontSize: 18, color: Colors.black38),
