@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/pages/login.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,15 +19,16 @@ class _HomeState extends State<Home> {
             child: Image.asset("assets/app-logo.png"),
           ),
         ),
-        leading: Builder(
-          builder: (context) {
-            return TextButton(
-                child: Image.asset("assets/user-picture.png", fit: BoxFit.cover,),
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                });
-          }
-        ),
+        leading: Builder(builder: (context) {
+          return TextButton(
+              child: Image.asset(
+                "assets/user-picture.png",
+                fit: BoxFit.cover,
+              ),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              });
+        }),
         actions: [
           SizedBox(
             width: 60,
@@ -37,12 +39,69 @@ class _HomeState extends State<Home> {
         ],
       ),
       drawer: Drawer(
+        // Add a ListView to the drawer. This ensures the user can scroll
+        // through the options in the drawer if there isn't enough vertical
+        // space to fit everything.
         child: ListView(
-          padding: const EdgeInsets.all(10),
-          children: const [
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: [
             DrawerHeader(
-                decoration: BoxDecoration(color: Colors.amberAccent),
-                child: Column())
+              padding: const EdgeInsets.only(bottom: 20),
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                Color(0xFFF58524),
+                Color(0xFFF92B7F),
+              ])),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  alignment: const Alignment(0.0, 1.4),
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/user-picture.png"),
+                          fit: BoxFit.fitHeight)),
+                  child: Container(
+                    height: 36,
+                    width: 46,
+                    //alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(56)),
+                    child: TextButton(
+                      onPressed: () {},
+                      child: const SizedBox(
+                          child: Icon(
+                        Icons.camera_alt_outlined,
+                      )),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            ListTile(
+              title: const Text('Perfil'),
+              trailing: Icon(Icons.person),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            ListTile(
+              title: const Text('Configurações'),
+              trailing: Icon(Icons.settings),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            ListTile(
+              title: const Text('Sair'),
+              trailing: Icon(Icons.output),
+              onTap: () {
+                sair(context);
+              },
+            ),
           ],
         ),
       ),
@@ -61,6 +120,11 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}
+
+void sair(BuildContext context) {
+  Navigator.pushReplacement(
+      context, MaterialPageRoute(builder: (context) => Login()));
 }
 
 Widget cardItem() {
