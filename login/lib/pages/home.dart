@@ -85,13 +85,8 @@ class _HomeState extends State<Home> {
                   onPressed: () => {},
                   child: const Row(
                     children: [
-                      Text(
-                        'Login',
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white),
-                      ),
+                      Text('1'),
+                      Text('2'),
                     ],
                   ),
                 ),
