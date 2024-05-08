@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/pages/home.dart';
 import 'package:login/pages/reset_password.dart';
 import 'package:login/pages/sign_up.dart';
 
@@ -91,7 +92,10 @@ class _LoginState extends State<Login> {
               ),
               child: SizedBox.expand(
                 child: TextButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Home()))
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -123,7 +127,10 @@ class _LoginState extends State<Login> {
               ),
               child: SizedBox.expand(
                 child: TextButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Home()))
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
