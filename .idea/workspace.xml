@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="fazendo a parte q o mano ta ensinando">
+    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="ai q saudade da minha ex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/login/lib/pages/home.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715110640264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ai q saudade da minha ex">
+      <option name="closed" value="true" />
+      <created>1715111380679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715111380679</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ai chavinho" />
     <MESSAGE value="fazendo a parte q o mano ta ensinando" />
-    <option name="LAST_COMMIT_MESSAGE" value="fazendo a parte q o mano ta ensinando" />
+    <MESSAGE value="ai q saudade da minha ex" />
+    <option name="LAST_COMMIT_MESSAGE" value="ai q saudade da minha ex" />
   </component>
 </project>
