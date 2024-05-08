@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
             ),
             ListTile(
               title: const Text('Perfil'),
-              trailing: Icon(Icons.person),
+              trailing: const Icon(Icons.person),
               onTap: () {
                 // Update the state of the app.
                 // ...
@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
             ),
             ListTile(
               title: const Text('Configurações'),
-              trailing: Icon(Icons.settings),
+              trailing: const Icon(Icons.settings),
               onTap: () {
                 // Update the state of the app.
                 // ...
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
             ),
             ListTile(
               title: const Text('Sair'),
-              trailing: Icon(Icons.output),
+              trailing: const Icon(Icons.output),
               onTap: () {
                 sair(context);
               },
@@ -124,7 +124,7 @@ class _HomeState extends State<Home> {
 
 void sair(BuildContext context) {
   Navigator.pushReplacement(
-      context, MaterialPageRoute(builder: (context) => Login()));
+      context, MaterialPageRoute(builder: (context) => const Login()));
 }
 
 Widget cardItem() {

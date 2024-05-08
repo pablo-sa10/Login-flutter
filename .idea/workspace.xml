@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="vou adicionar uma gaveta nesas porra agora">
+    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="consegui fazer o botao de sair, pelo menos o básico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/login/lib/pages/home.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715192874611</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="consegui fazer o botao de sair, pelo menos o básico">
+      <option name="closed" value="true" />
+      <created>1715195923804</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715195923804</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,6 +205,7 @@
     <MESSAGE value="tela de cadastro feita ;)" />
     <MESSAGE value="todos os layouts foram feitos com sucesso, menos o menu :(" />
     <MESSAGE value="vou adicionar uma gaveta nesas porra agora" />
-    <option name="LAST_COMMIT_MESSAGE" value="vou adicionar uma gaveta nesas porra agora" />
+    <MESSAGE value="consegui fazer o botao de sair, pelo menos o básico" />
+    <option name="LAST_COMMIT_MESSAGE" value="consegui fazer o botao de sair, pelo menos o básico" />
   </component>
 </project>
