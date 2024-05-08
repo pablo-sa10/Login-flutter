@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:login/pages/reset_password.dart';
+import 'package:login/pages/sign_up.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Login> createState() => _LoginState();
 }
 
-class _HomeState extends State<Home> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +26,7 @@ class _HomeState extends State<Home> {
               height: 20,
             ),
             TextFormField(
+              autofocus: true,
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
                   labelText: "E-mail",
@@ -57,9 +59,10 @@ class _HomeState extends State<Home> {
               child: TextButton(
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(
-                      builder: (context) => const ResetPasswordPage(),)
-                    );
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ResetPasswordPage(),
+                        ));
                   },
                   child: const Text(
                     "Recuperar Senha",
@@ -146,7 +149,10 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 40,
               child: TextButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const SignUp()))
+                },
                 child: const Text(
                   "Cadastre-se",
                   textAlign: TextAlign.center,

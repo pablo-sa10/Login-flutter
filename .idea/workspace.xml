@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="tela de login finalizado">
-      <change afterPath="$PROJECT_DIR$/login/lib/pages/reset_password.dart" afterDir="false" />
+    <list default="true" id="0e96091f-be6a-49fc-bc78-4d4ee1cd4279" name="Changes" comment="tela de recuperar senha feita ;)">
+      <change afterPath="$PROJECT_DIR$/login/lib/pages/sign_up.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/login/lib/pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/login/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/login/lib/pages/login.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715168139663</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tela de recuperar senha feita ;)">
+      <option name="closed" value="true" />
+      <created>1715174811262</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715174811262</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +172,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="sobneeeeee" />
     <MESSAGE value="tela de login finalizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="tela de login finalizado" />
+    <MESSAGE value="tela de recuperar senha feita ;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="tela de recuperar senha feita ;)" />
   </component>
 </project>
