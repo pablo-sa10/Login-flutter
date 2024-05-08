@@ -18,31 +18,33 @@ class _HomeState extends State<Home> {
             child: Image.asset("assets/app-logo.png"),
           ),
         ),
-        leading: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            height: 40,
-            width: 40,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/user-picture.png"),
-                fit: BoxFit.fitHeight
-              )
-            ),
-          ),
+        leading: Builder(
+          builder: (context) {
+            return TextButton(
+                child: Image.asset("assets/user-picture.png", fit: BoxFit.cover,),
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                });
+          }
         ),
         actions: [
           SizedBox(
             width: 60,
             child: TextButton(
-              onPressed: () => {},
-              child: const Icon(
-                Icons.search,
-                color: Color(0xFFBABABA)
-              )
-            ),
+                onPressed: () => {},
+                child: const Icon(Icons.search, color: Color(0xFFBABABA))),
           )
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: const EdgeInsets.all(10),
+          children: const [
+            DrawerHeader(
+                decoration: BoxDecoration(color: Colors.amberAccent),
+                child: Column())
+          ],
+        ),
       ),
       body: Container(
         color: const Color(0xFFF2F3F6),
@@ -61,7 +63,7 @@ class _HomeState extends State<Home> {
   }
 }
 
-Widget cardItem(){
+Widget cardItem() {
   return Card(
     child: Column(
       mainAxisSize: MainAxisSize.min,
@@ -76,24 +78,30 @@ Widget cardItem(){
         Container(
           padding: const EdgeInsets.all(10),
           child: const Text(
-            "Ai Chavinho", style: TextStyle(fontSize: 16),
+            "Ai Chavinho",
+            style: TextStyle(fontSize: 16),
           ),
         ),
         ButtonTheme(
           child: ButtonBar(
             children: [
               TextButton(
-                child: Icon(Icons.favorite, color: Colors.red,),
-                onPressed: (){},
+                child: const Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                ),
+                onPressed: () {},
               ),
               TextButton(
-                child: Icon(Icons.share),
-                onPressed: (){},
+                child: const Icon(Icons.share),
+                onPressed: () {},
               ),
             ],
           ),
         ),
-        const SizedBox(height: 10,)
+        const SizedBox(
+          height: 10,
+        )
       ],
     ),
   );
