@@ -86,7 +86,6 @@ class _HomeState extends State<Home> {
                   child: const Row(
                     children: [
                       Text('1'),
-                      Text('2'),
                     ],
                   ),
                 ),
